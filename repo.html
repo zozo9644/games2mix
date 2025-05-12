@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Download Repo Mobile</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        
+        body {
+            background-image: url('https://i.postimg.cc/ZqpLPW5M/1457174.webp');
+            /* Image URL */
+            background-size: cover;
+            /* Ensures the image covers the entire screen */
+            background-position: center;
+            /* Centers the image */
+            background-repeat: no-repeat;
+            /* Prevents the image from repeating */
+            font-family: 'Segoe UI', sans-serif;
+            color: #ffffff;
+        }
+        
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #161b22;
+            padding: 15px 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+        
+        .header img {
+            height: 35px;
+            margin-right: 10px;
+        }
+        
+        .header h1 {
+            font-size: 20px;
+            color: #ff0000;
+            margin: 0;
+            font-weight: 600;
+        }
+        
+        .container {
+            max-width: 420px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .card {
+            background-color: #161b22;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .card-content {
+            padding: 16px;
+        }
+        
+        .title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+        
+        .rating {
+            color: #facc15;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        
+        .info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            margin-bottom: 16px;
+            color: #c9d1d9;
+        }
+        
+        .tag {
+            background-color: #30363d;
+            padding: 5px 10px;
+            border-radius: 8px;
+        }
+        
+        .description {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #c9d1d9;
+            margin-bottom: 16px;
+        }
+        
+        .features {
+            margin-bottom: 16px;
+        }
+        
+        .features li {
+            font-size: 14px;
+            margin-bottom: 6px;
+            color: #d1d5db;
+        }
+        
+        .download-btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background: linear-gradient(to right, #0ea5e9, #3b82f6);
+            color: #fff;
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: background 0.3s;
+            margin-top: 10px;
+        }
+        
+        .download-btn:hover {
+            background: linear-gradient(to right, #0284c7, #2563eb);
+        }
+        
+        .screenshot {
+            margin-top: 20px;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .screenshot img {
+            width: 100%;
+            display: block;
+        }
+        
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 30px;
+            }
+            .card-content {
+                padding: 12px;
+            }
+            .title {
+                font-size: 20px;
+            }
+            .download-btn {
+                font-size: 15px;
+                padding: 10px;
+            }
+            .features li {
+                font-size: 13px;
+            }
+            .description {
+                font-size: 14px;
+            }
+            .header img {
+                height: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header with Logo -->
+    <div class="header">
+        <img src="logo.png" alt="" />
+        <h1>Games2Mix</h1>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <img src="https://i.postimg.cc/v8njmmyD/r-e-p-o-file-207303896c.png" alt="Baseball 9" />
+            <div class="card-content">
+                <div class="title">Repo Mobile</div>
+                <div class="rating">⭐ 4.9 (6.2k reviews)</div>
+                <div class="info">
+                    <span class="tag">Horror</span>
+                    <span>189 MB</span>
+                </div>
+                <div class="description">
+                    🎮 Repo Mobile – The mobile adaptation of R.E.P.O. brings the same thrilling co-op horror experience to Android and iOS devices. Players can team up with friends to navigate haunted environments, utilize physics-driven tools, and face off against a variety
+                    of monstrous foes. The mobile version maintains the core mechanics of the original, ensuring a seamless transition for players on the go.
+                </div>
+                <ul class="features">
+                    <li>✨ What makes this version special?</li>
+                    <li>✅ Fully Paid Version – Enjoy all features without any limitations!</li>
+                    <li>💰 Multiplayer – You can play with your friends</li>
+                    <li>⚾ Ad-Free Gameplay – Play without interruptions.</li>
+                    <li>🎮 Enhanced Graphics & Performance – Smoother and more enjoyable experience.</li>
+                </ul>
+                <a onclick=" " class="download-btn" target="_blank">Download Game</a>
+            </div>
+        </div>
+
+        <div class="screenshot">
+            <img src="https://i.postimg.cc/mk5Zg2Cb/show.png" alt="Gameplay Screenshot">
+        </div>
+
+        <a onclick=" " class="download-btn" target="_blank">Download Now</a>
+    </div>
+</body>
+
+</html>
