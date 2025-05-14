@@ -9,7 +9,6 @@
     <!-- MyLead Verification Meta Tag -->
     <meta name="mylead-verification" content="fbd0c482d32070ac54fd6498112bdc8b">
 
-
     <style>
         * {
             box-sizing: border-box;
@@ -24,13 +23,9 @@
         
         body {
             background-image: url('https://i.postimg.cc/ZqpLPW5M/1457174.webp');
-            /* Image URL */
             background-size: cover;
-            /* Ensures the image covers the entire screen */
             background-position: center;
-            /* Centers the image */
             background-repeat: no-repeat;
-            /* Prevents the image from repeating */
             font-family: 'Segoe UI', sans-serif;
             color: #ffffff;
         }
@@ -137,6 +132,7 @@
             text-decoration: none;
             transition: background 0.3s;
             margin-top: 10px;
+            cursor: pointer;
         }
         
         .download-btn:hover {
@@ -152,6 +148,22 @@
         .screenshot img {
             width: 100%;
             display: block;
+        }
+        /* Locker section (hidden initially) */
+        
+        .locker-wrapper {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 100vw;
+            min-height: 100%;
+            border: none;
+            margin: 0;
+            padding: 0;
+            z-index: 9999999;
+            overflow: hidden;
+            display: none;
+            /* Hidden by default */
         }
         
         @media (max-width: 480px) {
@@ -186,16 +198,16 @@
     <!-- MyLead Verification HTML Comment -->
     <!-- mylead-verification: fbd0c482d32070ac54fd6498112bdc8b -->
 
-
-    <!-- Header with Logo -->
+    <!-- Header -->
     <div class="header">
-        <img src="logo.png" alt="" />
+        <img src="https://i.postimg.cc/NFDGJrZh/logo.png" alt="Logo" />
         <h1>Games2Mix</h1>
     </div>
 
+    <!-- Main Content -->
     <div class="container">
         <div class="card">
-            <img src="https://i.postimg.cc/v8njmmyD/r-e-p-o-file-207303896c.png" alt="Baseball 9" />
+            <img src="https://i.postimg.cc/v8njmmyD/r-e-p-o-file-207303896c.png" alt="Repo Mobile" />
             <div class="card-content">
                 <div class="title">Repo Mobile</div>
                 <div class="rating">⭐ 4.9 (6.2k reviews)</div>
@@ -204,30 +216,33 @@
                     <span>189 MB</span>
                 </div>
                 <div class="description">
-                    🎮 Repo Mobile – The mobile adaptation of R.E.P.O. brings the same thrilling co-op horror experience to Android and iOS devices. Players can team up with friends to navigate haunted environments, utilize physics-driven tools, and face off against a variety
-                    of monstrous foes. The mobile version maintains the core mechanics of the original, ensuring a seamless transition for players on the go.
+                    🎮 Repo Mobile – The mobile adaptation of R.E.P.O. brings the same thrilling co-op horror experience to Android and iOS devices. Play with friends, use physics tools, and survive the monsters.
                 </div>
                 <ul class="features">
-                    <li>✨ What makes this version special?</li>
-                    <li>✅ Fully Paid Version – Enjoy all features without any limitations!</li>
-                    <li>💰 Multiplayer – You can play with your friends</li>
-                    <li>⚾ Ad-Free Gameplay – Play without interruptions.</li>
-                    <li>🎮 Enhanced Graphics & Performance – Smoother and more enjoyable experience.</li>
+                    <li>✅ Fully Paid – No limitations</li>
+                    <li>💰 Multiplayer support</li>
+                    <li>⚡ No Ads</li>
+                    <li>🎮 Enhanced Graphics</li>
                 </ul>
-                <a href="https://getafilenow.com/1807839" class="download-btn" target="_blank">Download Game</a>
+                <button class="download-btn" onclick="showLocker()">Install Now</button>
             </div>
         </div>
 
         <div class="screenshot">
             <img src="https://i.postimg.cc/mk5Zg2Cb/show.png" alt="Gameplay Screenshot">
         </div>
-
-        <a href="https://getafilenow.com/1807839" class="download-btn" target="_blank">Download Now</a>
     </div>
 
-    <!-- Repo Game Locker Only -->
-    <script type="text/javascript" id="cpljs-30bc518a-2e9e-11f0-9b57-c2a106037d45" src="https://bestlocker.eu/iframeLoader/30bc518a-2e9e-11f0-9b57-c2a106037d45"></script>
+    <!-- MyLead Locker Iframe -->
+    <iframe id="lockerFrame" class="locker-wrapper" src="https://bestreward.eu/iframe/df50ea92-2eaa-11f0-8dee-c2a106037d45" sandbox="allow-top-navigation allow-scripts allow-same-origin allow-popups allow-forms"></iframe>
 
+    <!-- Locker Trigger Script -->
+    <script>
+        function showLocker() {
+            document.getElementById("lockerFrame").style.display = "block";
+            window.scrollTo(0, 0);
+        }
+    </script>
 
 </body>
 
